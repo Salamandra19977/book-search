@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 25px;
+}
+body {
+	padding: 25px;
+}
+button {
+	border: 1px solid black;
+	outline: 1px solid black;
+}
+.main {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.books, .saved-books {
+	margin: 10px 0;
+	max-width: 800px;
+	width: 100%;
+}
+
+.book {
+	padding: 10px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.book p {
+	margin-bottom: 5px;
+}
+.book img {
+	background-color: #ddd;
+}
+.search-block {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+.pages {
+	display: flex;
+	flex-direction: column;
+}
+#q {
+	margin-right: 10px;
+	padding: 5px;
+}
+#search, #prevPageButton, #nextPageButton {
+	padding: 5px;
+}
+#show, #delete, #save {
+	width: 100%;
+}
+#numberPage {
+	text-align: center;
+}
+#additional-information, .spinner-border {
+	display: none;
+}
+
+.img {
+	height: 40%;
+}
+
+@media all and (max-width: 600px){
+	body {
+		padding: 0;
+	}
+
+	.main {
+		width: 95%;
+	}
+	.book img {
+		width: 40%;
+	}
+	#q {
+		margin-right: 2px;
+		width: 95%;
+	}
+}
